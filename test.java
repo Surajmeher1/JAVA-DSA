@@ -22,15 +22,22 @@ public class test {
     public static int b(float a,float b){
         return (int) (a*b);
     } 
-
+    public static boolean prime(int n){
+     if(n==2){
+        return true;
+     }
+        for(int i=2;i<=n-1;i++){
+            if (n%i==0) {
+                return false;
+            }
+        }
+        return true;
+        
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the number ");
-        int a=(int) sc.nextFloat();
-        int r=sc.nextInt();
-        int b=sc.nextInt();
-        System.out.println( b(a, b));
-    ;
-        System.out.println(b(12.67f,34.68f));
-    }
+        int a=sc.nextInt();
+        
+}
 }
