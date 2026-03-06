@@ -37,20 +37,21 @@ public class test {
     public static int bintodec (int n){
           
           int dec=0;
-        int sq=0;
+        int pow=0;
             while(n>0){
                 int lastno=n%10;
                
-                dec=dec+lastno*(int)Math.pow(2,sq);
-                sq++;
+                dec=dec+lastno*(int)Math.pow(2,pow);
+                pow++;
                 n/=10;
             }
             return dec;
     }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the number ");
         int a=sc.nextInt();
-System.out.println(bintodec(a));
+    System.out.println(bintodec(a));
 }
 }

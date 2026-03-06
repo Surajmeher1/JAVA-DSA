@@ -33,13 +33,8 @@ public static boolean twinprimeno(int n){
 }
 
     public static void main(String[] args) {
-        int a=100;
-        for(int i=2;i<=a;i++){
-            if(twinprimeno(i)==true){
-
-                System.out.println("This are twin prime ("+i+","+(i+2)+")");
-            }
-        }
+        int a=5;
+        System.out.println(isprime(a));
         
     }
 }
