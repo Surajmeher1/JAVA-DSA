@@ -37,7 +37,7 @@ public class test {
     public static int bintodec (int n){
           
           int dec=0;
-        int pow=0;
+        int pow=0; 
             while(n>0){
                 int lastno=n%10;
                
@@ -47,11 +47,49 @@ public class test {
             }
             return dec;
     }
+    public static int reverseDigits(int n) {
+        int revNum = 0;
+        while (n > 0) {
+            revNum = revNum * 10 + n % 10;
+            n = n / 10;
+        }
+        return revNum;
+    }
+    public static int dectobin (int n){
+      
+        int bin=0;
+        int pow=0;
+        while(n>0){
+            int rem=n%2;
+            bin=bin+rem*(int)Math.pow(10, pow);
+            pow++;
+            n/=2;
+        }
+        
+        return bin;
 
+    }
+    public static int sqpatten(int n){
+        for(int i=0;i<n;i++){
+            for(int j=i;j<n;j++){
+                System.out.println("*");
+            }
+        }
+        return n;
+    }
+
+    static int arrlarg(int [] v1){
+        
+        
+    }
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("enter the number ");
-        int a=sc.nextInt();
-    System.out.println(bintodec(a));
+      //  System.out.println("enter the number ");
+    //     int a=sc.nextInt();
+    // System.out.println(dectobin(a));
+    
+int[] v1={12, 45, 7, 89, 23};
+    
 }
 }
